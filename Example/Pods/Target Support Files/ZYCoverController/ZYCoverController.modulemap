@@ -1,0 +1,6 @@
+framework module ZYCoverController {
+  umbrella header "ZYCoverController-umbrella.h"
+
+  export *
+  module * { export * }
+}

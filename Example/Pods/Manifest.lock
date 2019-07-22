@@ -1,0 +1,16 @@
+PODS:
+  - ZYCoverController (0.1.0)
+
+DEPENDENCIES:
+  - ZYCoverController (from `../`)
+
+EXTERNAL SOURCES:
+  ZYCoverController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZYCoverController: bffcc007d1c731b0d24fe3959d31adc0f2a408e8
+
+PODFILE CHECKSUM: 38e769f22b32cfc514bef8a5cfec10e8ebed8fc5
+
+COCOAPODS: 1.7.1

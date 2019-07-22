@@ -1,0 +1,23 @@
+{
+  "name": "ZYCoverController",
+  "version": "0.1.0",
+  "summary": "A short description of ZYCoverController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/luzhiyongmail@sohu.com/ZYCoverController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "luzhiyongmail@sohu.com": "luzhiyong@km.com"
+  },
+  "source": {
+    "git": "https://github.com/luzhiyongmail@sohu.com/ZYCoverController.git",
+    "tag": "0.1.0"
+  },
+  "preserve_paths": "ZYCoverController/***/module.modulemap",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZYCoverController/Classes/**/*"
+}
