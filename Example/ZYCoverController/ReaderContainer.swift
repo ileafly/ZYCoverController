@@ -15,6 +15,8 @@ class ReaderContainer: UIViewController {
     
     var showMenu: Bool = false
     
+    var animated: Bool = true
+    
     lazy var topMenu: TopMenuView = {
         let tmp = TopMenuView(frame: CGRect(x: 0, y: -menuHeight, width: viewWidth, height: menuHeight))
         tmp.backClosure = {
@@ -102,19 +104,35 @@ class ReaderContainer: UIViewController {
     
     func forwardFlip() {
         let contentVC = ReaderContentController()
-        self.coverVC?.setViewController(contentVC, isForward: true, animated: true)
+        if animated == false {
+           contentVC.view.backgroundColor = randomColor()
+        }
+        self.coverVC?.setViewController(contentVC, isForward: true, animated: animated)
     }
     
     func backwardFlip() {
         let contentVC = ReaderContentController()
-        self.coverVC?.setViewController(contentVC, isForward: false, animated: true)
+        if animated == false {
+            contentVC.view.backgroundColor = randomColor()
+        }
+        self.coverVC?.setViewController(contentVC, isForward: false, animated: animated)
+    }
+    
+    // MARK: 私有方法
+    
+    func randomColor() -> UIColor {
+        let red = CGFloat(arc4random()%256)/255.0
+        let green = CGFloat(arc4random()%256)/255.0
+        let blue = CGFloat(arc4random()%256)/255.0
+        
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
 }
 
 
 extension ReaderContainer: ZYCoverControllerDelegate {
     func finishCoverAnimation(_ success: Bool) {
-        
+        print("翻页完成")
     }
     
     func forwardController() -> UIViewController {

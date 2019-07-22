@@ -29,5 +29,10 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(ReaderContainer(), animated: true)
     }
     
+    @IBAction func flipWithoutAnimation(_ sender: Any) {
+        let readerContainer = ReaderContainer()
+        readerContainer.animated = false
+        self.navigationController?.pushViewController(readerContainer, animated: true)
+    }
 }
 

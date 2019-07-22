@@ -26,9 +26,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KHz-mn-Wr0"/>
                                 </constraints>
-                                <state key="normal" title="覆盖翻页"/>
+                                <state key="normal" title="阅读器覆盖翻页"/>
                                 <connections>
                                     <action selector="flipAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BMg-rs-8UT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Zq-zka">
+                                <rect key="frame" x="102" y="243" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="无动画翻页"/>
+                                <connections>
+                                    <action selector="flipWithoutAnimation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yGd-Ii-zuK"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -71,6 +71,13 @@ public class ZYCoverController: UIViewController {
             animateCoverController(isForward, animated: animated)
         } else {
             addController(viewController, isForward: isForward)
+            
+            if currentController != nil {
+                currentController?.view.removeFromSuperview()
+                currentController?.removeFromParent()
+            }
+            
+            currentController = viewController
         }
     }
     
@@ -151,7 +158,6 @@ public class ZYCoverController: UIViewController {
             viewController.view.frame = CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight)
             // 新页面插入在最下层
             view.addSubview(viewController.view)
-            currentController = viewController
         }
         addShadow(viewController)
     }
@@ -218,7 +224,10 @@ public class ZYCoverController: UIViewController {
             tempController?.removeFromParent()
         }
         
+        delegate?.finishCoverAnimation(success)
+        
         animating = false
+        
     }
 
 }
