@@ -54,7 +54,7 @@
 		DE5456ACB9D68A37C525E6ED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DF133ECA547C954A0481C30A /* Pods-ZYCoverController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYCoverController_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYCoverController_Tests/Pods-ZYCoverController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0279E190E7A7BDD4CE0C6D3 /* Pods_ZYCoverController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYCoverController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1C387B8C41A4D6A65EF5896 /* ZYCoverController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYCoverController.podspec; path = ../ZYCoverController.podspec; sourceTree = "<group>"; };
+		E1C387B8C41A4D6A65EF5896 /* ZYCoverController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYCoverController.podspec; path = ../ZYCoverController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

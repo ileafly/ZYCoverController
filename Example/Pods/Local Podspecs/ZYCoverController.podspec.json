@@ -1,21 +1,19 @@
 {
   "name": "ZYCoverController",
   "version": "0.1.0",
-  "summary": "A short description of ZYCoverController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/luzhiyongmail@sohu.com/ZYCoverController",
+  "summary": "A lightweight, pure-Swift library for cover flip.",
+  "homepage": "https://github.com/ileafly/ZYCoverController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "luzhiyongmail@sohu.com": "luzhiyong@km.com"
+    "luzhiyongmail@sohu.com": "luzhiyongmail@sohu.com"
   },
   "source": {
-    "git": "https://github.com/luzhiyongmail@sohu.com/ZYCoverController.git",
+    "git": "https://github.com/ileafly/ZYCoverController.git",
     "tag": "0.1.0"
   },
-  "preserve_paths": "ZYCoverController/***/module.modulemap",
   "platforms": {
     "ios": "8.0"
   },
